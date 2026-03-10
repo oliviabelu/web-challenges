@@ -27,9 +27,21 @@ h2 {
   max-width: 50%;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  align-self: center;
+}
+
 .tech-stack__list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .tech-stack__list-item {
