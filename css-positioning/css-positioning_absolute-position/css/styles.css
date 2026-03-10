@@ -28,7 +28,8 @@ main {
 
 /**
  * Look at the selectors defined below.
- * Position each element so that its placement matches the name of the selector.
+ * Position each element so that its placement matches the name of 
+ the selector.
  * Adjust the rule sets for each selector to achieve the correct positioning.
  *
  * @example
@@ -37,16 +38,24 @@ main {
 
 .box--top-left {
   background-color: #aed6f1;
+  position: absolute;
 }
 
 .box--top-right {
   background-color: #5dade2;
+  position: absolute;
+  right: 0;
 }
 
 .box--bottom-left {
   background-color: #2874a6;
+  position: absolute;
+  bottom: 0;
 }
 
 .box--bottom-right {
   background-color: #1b4f72;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
