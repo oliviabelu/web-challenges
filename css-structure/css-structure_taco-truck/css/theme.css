@@ -11,3 +11,8 @@
   --card-bg: #8336ff7b;
   --card-text: #201e1d;
 }
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}

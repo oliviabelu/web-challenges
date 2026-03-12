@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--card-bg);
+  color: var(--card-text);
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 300px;
+  flex: 1 1 30%;
+  position: relative;
+}
+
+.card__title {
+  margin: 0 0 10px 0;
+}
+
+.card__button {
+  padding: 10px;
+  width: 100px;
+  color: var(--header-text);
+  background: var(--header-bg);
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.card__bestseller {
+  color: var(--header-bg);
+  background: var(--header-text);
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  rotate: 10deg;
+}
+
+.card__bestseller:hover {
+  rotate: -5deg;
+}
