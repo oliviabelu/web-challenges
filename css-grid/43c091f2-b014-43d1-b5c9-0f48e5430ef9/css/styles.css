@@ -24,28 +24,38 @@
 
 body {
   font-family: system-ui;
-  background-color: var(--black);
+
+  background-color: var(--grey-dark);
 }
 
-.services {
-  max-width: 900px;
+.cards {
+  margin: 0 auto;
   padding: 2rem;
-  margin: auto;
+  max-width: 50rem;
 
   /* Add styles to the container */
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
-.services__item {
-  padding: 1.4rem;
+.cards__option {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 6px;
 }
 
-.services__headline {
-  margin: 0 0 1rem 0;
-  color: var(--primary-light);
-}
-
-.services__text {
+.cards__option--highlight {
+  background-color: var(--primary);
   color: var(--white);
+}
+
+.cards__name {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.cards__price {
+  font-size: 2.5rem;
+  font-weight: bold;
 }

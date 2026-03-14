@@ -23,29 +23,34 @@
 }
 
 body {
+  margin: 0;
   font-family: system-ui;
-  background-color: var(--black);
+  background-color: var(--primary-dark);
 }
 
-.services {
-  max-width: 900px;
-  padding: 2rem;
-  margin: auto;
+.fish {
+  width: 20rem;
+  margin: 2rem auto;
 
   /* Add styles to the container */
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(3, 1fr) / 3fr 1fr;
 }
 
-.services__item {
-  padding: 1.4rem;
+.fish__text {
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+  background-color: var(--secondary);
 }
 
-.services__headline {
+.fish__headline {
   margin: 0 0 1rem 0;
-  color: var(--primary-light);
 }
 
-.services__text {
-  color: var(--white);
+.fish__icon {
+  display: block;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+  background-color: var(--secondary);
 }
