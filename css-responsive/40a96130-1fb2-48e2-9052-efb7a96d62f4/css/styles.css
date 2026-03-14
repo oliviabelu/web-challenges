@@ -239,11 +239,64 @@ body {
 CSS based on conditions such as viewport width, etc. */
 
 /* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media (min-width: 600px) {
+}
+/* @media screen (min-width: 600px) { */
+/* } */
 
 /* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media (min-width: 1200px) {
+  /* .main-header,
+  .navbar,
+  .main-content,
+  .main-footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .product-card:first-child {
+    height: 500px;
+    width: 100%;
+    box-shadow: none;
+    margin-top: calc(var(--gap) * (-1));
+  } */
+
+  .main-header,
+  .navbar {
+    z-index: 100;
+  }
+
+  .card-section {
+    display: grid;
+    grid-template: 2fr repeat(3, 1fr) / repeat(4, 1fr);
+    gap: var(--gap);
+    position: relative;
+    top: -20px;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-card:first-child {
+    height: 100%;
+  }
+
+  .--forest {
+    grid-column: span 4;
+  }
+
+  .--mountain,
+  .--ocean,
+  .--river,
+  .intro-text {
+    grid-column: span 2;
+  }
+
+  .--desert {
+    grid-column: 2 / span 2;
+  }
+}
