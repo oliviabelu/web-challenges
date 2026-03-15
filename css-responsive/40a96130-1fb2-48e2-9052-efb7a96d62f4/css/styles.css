@@ -238,11 +238,32 @@ body {
 /* Now it's your turn! Use media queries to partially overwrite our
 CSS based on conditions such as viewport width, etc. */
 
+@media (max-width: 900px) and (orientation: landscape) {
+  .main-header {
+    position: static;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+
+  .main-content {
+    margin: 0;
+  }
+}
+
 /* Media Query Tablet */
 @media (min-width: 600px) {
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    align-items: flexstart;
+    justify-content: space-around;
+  }
 }
-/* @media screen (min-width: 600px) { */
-/* } */
 
 /* Media Query Desktop */
 @media (min-width: 1200px) {
