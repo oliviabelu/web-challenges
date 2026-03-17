@@ -23,4 +23,12 @@ let tipAmount = (mealCost / 100) * tipPercent;
 
 let totalCost = mealCost + tipAmount;
 
-console.log(mealCost, tipAmount, totalCost);
+console.log(
+  "I payed " +
+    totalCost +
+    "€ . The meal was " +
+    mealCost +
+    "and I left " +
+    tipAmount +
+    "€ for tip.",
+);
