@@ -16,7 +16,7 @@ const exponentButton = document.querySelector('[data-js="exponent"]');
 const moduloButton = document.querySelector('[data-js="modulo"]');
 // --^-- write your code here --^--
 
-/* 
+/*
 Step 2: Add event listeners for each mathematical operation:
 
 For each operation (add, subtract, multiply, divide, exponent, and modulo):
@@ -86,7 +86,7 @@ increaseOne.addEventListener("click", () => {
 });
 
 increaseFive.addEventListener("click", () => {
-  operand1--;
+  operand1 += 5;
   console.log(operand1);
 });
 
