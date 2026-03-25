@@ -16,9 +16,9 @@ pizzaInput1.addEventListener("input", () => {
   const pizzaSize1 = pizzaInput1.value;
   const pizzaSize2 = pizzaInput2.value;
 
-  calculatePizzaGain(pizzaSize2, pizzaSize1);
+  calculatePizzaGain(pizzaSize1, pizzaSize2);
   updatePizzaDisplay(pizza1, pizzaSize1);
-  updateOutputColor(pizzaSize2, pizzaSize1);
+  updateOutputColor(pizzaSize1, pizzaSize2);
 });
 
 pizzaInput2.addEventListener("input", () => {
