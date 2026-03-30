@@ -49,8 +49,8 @@ for (const item in nav) {
 
   console.log(item);
 
-  anchorTag.href = item.href;
-  anchorTag.textContent = item.text;
+  anchorTag.href = nav[item].href;
+  anchorTag.textContent = nav[item].text;
 
   console.log(anchorTag);
 
