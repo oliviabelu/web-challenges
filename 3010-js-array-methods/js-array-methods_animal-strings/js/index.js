@@ -47,9 +47,11 @@ const animalsSortedAlphabetically = animalStrings.toSorted();
 //-----------------------------------------------
 
 // Hint: Guess what? There is a string method called `endsWith()`.
-const anyAnimalEndsWithLetterZ = null;
+const anyAnimalEndsWithLetterZ = endsWith("z");
 
-const everyAnimalHasMoreThanTwoLetters = null;
+const everyAnimalHasMoreThanTwoLetters = animalStrings.find((animal) => {
+  animal.length > 2;
+});
 
 // Hint: There are several ways to go here. Let's focus on two options:
 // Option 1: Concatenate all characters with `reduce()` and check for the `length` property of the result.
