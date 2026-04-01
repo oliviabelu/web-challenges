@@ -1,5 +1,5 @@
-import { Header } from "./Header/Header.js";
-import { Form } from "./Form/Form.js";
+import { Header } from "../Header/Header.js";
+import { Form } from "../Form/Form.js";
 import { CardList } from "../CardList/CardList.js";
 
 export function App() {
