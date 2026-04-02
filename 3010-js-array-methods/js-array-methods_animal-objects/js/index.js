@@ -108,7 +108,7 @@ const animalsSortedAlphabetically = animals.toSorted((a, b) => {
 const animalsSortedByWeightStartingWithLowest = animals.toSorted((a, b) => {
   const weightA = a.weight;
   const weightB = b.weight;
-  console.log(`weightA ${weightA}, weightB ${weightB}`);
+  //console.log(`weightA ${weightA}, weightB ${weightB}`);
   if (weightA < weightB) {
     return -1;
   }
@@ -117,7 +117,7 @@ const animalsSortedByWeightStartingWithLowest = animals.toSorted((a, b) => {
   }
   return 0;
 });
-console.log(animalsSortedByWeightStartingWithLowest);
+//console.log(animalsSortedByWeightStartingWithLowest);
 
 // Note:
 // - reverse() mutates the original array (like sort() does), which is bad.
@@ -130,8 +130,16 @@ const animalWithWeightMoreThanFivehundredExists = animals.some(
   (animal) => animal.weight > 500,
 );
 
+//------------------------
+//---HIER WEITERMACHEN--------
+//---v-v-v---------------------
+
 // Hint: Filter for Europe first, then check every animal for its weight.
-const allAnimalsInEuropeWeighLessThanOnehundred = null;
+const allAnimalsInEuropeWeighLessThanOnehundred = animals.filter((animal) =>
+  animal.continents.map((continent) => (continent = "Europe")),
+);
+console.log(animals);
+console.log(allAnimalsInEuropeWeighLessThanOnehundred);
 
 // Hint: filter + map + reduce
 const weightOfAllAnimalsInAfrica = null;
