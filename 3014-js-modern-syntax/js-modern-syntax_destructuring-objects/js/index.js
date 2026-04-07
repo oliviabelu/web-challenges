@@ -28,8 +28,8 @@ Use destructuring to extract the following:
 
 const user = { name: "John", years: 30 };
 
-export const { name: userName, years: age, isAdmin = false } = user;
-console.log(userName, age, isAdmin);
+export const { name, years: age, isAdmin = false } = user;
+console.log(name, age, isAdmin);
 
 /*
 EXERCISE 3
