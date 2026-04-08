@@ -15,7 +15,7 @@ const sortedNews = filteredNews.toSorted(
   (a, b) => a.body.length - b.body.length,
 );
 
-const testing = 1;
+let testing = 1;
 
 testing = testing + 1;
 
