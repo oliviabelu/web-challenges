@@ -19,7 +19,7 @@ let testing = 1;
 
 testing = testing + 1;
 
-console.log("Hey" + testing);
+console.log("Hello" + testing);
 
 sortedNews.forEach((news) => {
   const cardElement = Card(news);
