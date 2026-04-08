@@ -15,6 +15,8 @@ const sortedNews = filteredNews.toSorted(
   (a, b) => a.body.length - b.body.length,
 );
 
+const test = 0;
+
 sortedNews.forEach((news) => {
   const cardElement = Card(news);
   container.append(cardElement);
