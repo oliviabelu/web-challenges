@@ -5,7 +5,7 @@ export default function App() {
   //let isActive = false;
   //let buttonText = "Activate";
   const [isActive, setIsActive] = useState(false);
-  const [toggleButtonText, setToggleButtonText] = useState("Activate");
+  //const [toggleButtonText, setToggleButtonText] = useState("Activate");
 
   function handleClick() {
     //isActive = !isActive;
@@ -13,13 +13,18 @@ export default function App() {
     console.log(isActive);
     setIsActive(!isActive);
     console.log(isActive);
-    setToggleButtonText(isActive ? "Deactivate" : "Activate");
+    //setToggleButtonText(isActive ? "Deactivate" : "Activate");
   }
 
   return (
     <main>
       <div className={`box ${isActive ? "box--active" : ""}`} />
-      <button onClick={handleClick}>{toggleButtonText}</button>
+      <button onClick={handleClick}>
+        {
+          isActive ? "Deactivate" : "Activate"
+          //toggleButtonText
+        }
+      </button>
     </main>
   );
 }

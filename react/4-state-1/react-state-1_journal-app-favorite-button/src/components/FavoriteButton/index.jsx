@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function FavoriteButton() {
   // This should be a state variable.
   //const isFavorite = false;
-  const [isFavorite, setIsFavorite] = useState();
+  const [isFavorite, setIsFavorite] = useState(false);
 
   function handleFavoriteButton() {
     setIsFavorite(!isFavorite);
